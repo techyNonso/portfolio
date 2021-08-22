@@ -1,10 +1,10 @@
 import React from 'react'
 import "../assets/css/styles.css"
 
-function App() {
+function Todo() {
   return (
       <div>Hello Portfolio starts</div>
   )
 }
 
-export default App
+export default Todo
