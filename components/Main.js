@@ -1,8 +1,10 @@
 import React from 'react'
 
-function Main() {
+function Main(props) {
   return (
-      <main class="main"></main>
+      <main className="main">
+        {props.children}
+      </main>
   )
 }
 
