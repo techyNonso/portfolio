@@ -83,7 +83,7 @@ function Services() {
           {/** Services 3 */}
           <div className="services__content">
             <div>
-              <i className="uil uil-web-grid services__icon"></i>
+              <i className="uil uil-link services__icon"></i>
               <h3 className="services__title">blockchain <br/> Developer</h3>
             </div>
 
@@ -118,7 +118,7 @@ function Services() {
           {/** Services 4 */}
           <div className="services__content">
             <div>
-              <i className="uil uil-web-grid services__icon"></i>
+              <i className="uil uil-wordpress-simple services__icon"></i>
               <h3 className="services__title">Wordpress <br/> Developer</h3>
             </div>
 

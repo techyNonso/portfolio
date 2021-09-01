@@ -1,3 +1,5 @@
+import Swiper from "./swiper-bundle.min.js"
+
 /*==================== MENU SHOW Y HIDDEN ====================*/
 const navMenu = document.getElementById("nav-menu"),
       navToggle = document.getElementById("nav-toggle"),
@@ -73,7 +75,7 @@ tabs.forEach(tab => {
 /*==================== SERVICES MODAL ====================*/
 const  modalViews = document.querySelectorAll('.services__modal'),
        modalBtns = document.querySelectorAll('.services__button'),
-       modalCloses = document.querySelectorAll('.services__modal-close0')
+       modalCloses = document.querySelectorAll('.services__modal-close')
 
 let modal = function(modalClick){
     modalViews[modalClick].classList.add('active-modal')
@@ -95,9 +97,36 @@ modalCloses.forEach((modalClose) => {
 
 /*==================== PORTFOLIO SWIPER  ====================*/
 
+let swiperPortfolio = new Swiper(".portfolio__container", {
+    cssMode: true,
+    loop: true,
 
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true
+    },
+    
+  });
 /*==================== TESTIMONIAL ====================*/
-
+let swiperTestimonial = new Swiper(".testimonial__container", {
+    cssMode: true,
+    grabCursor: true,
+    spaceBetween: 48,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      dynamicBullets: true
+    },
+    breakpoints:{
+        568:{
+            slidesPerView:2,
+        }
+    }
+  });
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 

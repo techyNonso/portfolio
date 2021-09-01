@@ -1,4 +1,5 @@
 import React from 'react'
+import "../assets/css/swiper-bundle.min.css"
 import "../assets/css/styles.css"
 
 import Header from '../components/Header'
@@ -8,6 +9,12 @@ import About from '../components/About'
 import Skills from '../components/Skills'
 import Qualification from '../components/Qualification'
 import Services from '../components/Services'
+import Portfolio from '../components/Portfolio'
+import Todo from '../components/Todo'
+import Testimonial from '../components/Testimonial'
+import Contact from '../components/Contact'
+import Footer from '../components/Footer'
+
 
 function App() {
   return (
@@ -19,6 +26,11 @@ function App() {
         <Skills/>
         <Qualification />
         <Services/>
+        <Portfolio />
+        <Todo/>
+        <Testimonial/>
+        <Contact/>
+        <Footer />
       </Main>
       </div>
   )
