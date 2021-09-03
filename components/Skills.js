@@ -86,6 +86,16 @@ function Skills() {
                       </div>
 
                     </div>
+                    <div className="skills__data">
+                      <div className="skills_titles">
+                        <h3 className="skills__name">Next Js</h3>
+                        <span className="skills__number">65%</span>
+                      </div>
+                      <div className="skills__bar">
+                        <span className="skills__percentage skills__next"></span>
+                      </div>
+
+                    </div>
 
                     <div className="skills__data">
                       <div className="skills_titles">

@@ -1,6 +1,7 @@
 import React from 'react'
 import "../assets/css/styles.css"
 import project from "../assets/img/project.png"
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 function Todo() {
   return (
@@ -10,10 +11,10 @@ function Todo() {
             <div className="project__data">
               <h2 className="project__title">You have a new project</h2>
               <p className="project__description">Contact me now and get a great price on your new project.</p>
-              <a href="#contact" className="button button--flex button--white">
+              <AnchorLink  href="#contact" className="button button--flex button--white">
                 Contact Me
                 <i className="uil uil-message project__icon  button__icon"></i>
-              </a>
+              </AnchorLink >
             </div>
 
             <img src={project} className="project__img" />

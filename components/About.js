@@ -1,5 +1,6 @@
 import React from 'react'
 import about from "../assets/img/about.jpg"
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 function About() {
   return (
@@ -27,9 +28,9 @@ function About() {
             </div>
 
             <div className="about__buttons">
-              <a download="" href="../assets/pdf/Alexa-cv.pdf" className="button button--flex">
+              <AnchorLink  download="" href="../assets/pdf/Alexa-cv.pdf" className="button button--flex">
               Download CV<i className="uil uil-download-alt button__icon"></i>
-              </a>
+              </AnchorLink >
             </div>
           </div>
         </div>

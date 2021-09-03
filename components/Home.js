@@ -1,17 +1,20 @@
-import React from 'react'
-import perfil from "../assets/img/perfil.png"
+import React from 'react';
+import perfil from "../assets/img/perfil.png";
+import AnchorLink from 'react-anchor-link-smooth-scroll';
+import { ExternalLink } from 'react-external-link';
+
 function Home() {
   return (
      <section className="home section" id="home">
         <div className="home__container container grid">
           <div className="home__content grid">
             <div className="home__social">
-            <a href="https://www.linkedin.com/in/chukwunonso-ikeji-040519205/" target="_blank" className="home__social-icon">
+            <ExternalLink href="https://www.linkedin.com/in/chukwunonso-ikeji-040519205/"  className="home__social-icon">
             <i className="uil uil-linkedin-alt"></i>
-            </a>
-            <a href="https://github.com/techynonso" target="_blank" className="home__social-icon">
+            </ExternalLink >
+            <ExternalLink  href="https://github.com/techynonso"  className="home__social-icon">
             <i className="uil uil-github-alt"></i>
-            </a>
+            </ExternalLink >
             </div>
             <div className="home__img">
               <svg className="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
@@ -35,17 +38,17 @@ function Home() {
             <h1 className="home__title">Hi, I'm chukwunonso</h1>
             <h3 className="home__subtitle">Software Developer</h3>
             <p className="home__description"> High level experience in fullstack web development and Blockchain development.</p>
-            <a href="#contact" className="button button--flex">
+            <AnchorLink  href="#contact" className="button button--flex">
               Contact Me <i className="uil uil-message button__icon"></i>
-            </a>
+            </AnchorLink >
             </div>
           </div>
           <div className="home__scroll">
-            <a href="#about" className="home__scroll-button button--flex">
+            <AnchorLink  href="#about" className="home__scroll-button button--flex">
              <i className="uil uil-mouse-alt home__scroll-mouse"></i>
              <span className="home__scroll-name">Scroll down</span>
              <i className="uil uil-arrow-down home__scroll-arrow"></i>
-            </a>
+            </AnchorLink >
           </div>
         </div>
       </section>
