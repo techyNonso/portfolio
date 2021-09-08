@@ -41,9 +41,9 @@ function Footer() {
         </div>
       </footer>
 
-      <AnchorLink  href="#" className="scrollup" id="scroll-up">
+      <a  href="#" className="scrollup" id="scroll-up">
         <i className="uil uil-arrow-up scrollup__icon"></i>
-      </AnchorLink >
+      </a >
       </Fragment>
   )
 }

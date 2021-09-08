@@ -94,7 +94,7 @@ function Services() {
 
             <div className="services__modal">
               <div className="services__modal-content">
-                <h4 className="services__modal-title">Block <br/> Developer</h4>
+                <h4 className="services__modal-title">Blockchain <br/> Developer</h4>
                 <i className="uil uil-times services__modal-close"></i>
 
                 <ul className="services__modal-services grid">

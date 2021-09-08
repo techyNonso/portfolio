@@ -920,6 +920,14 @@ img{
 
 
 /*==================== CONTACT ME ====================*/
+.error{
+    color: red;
+    font-size: .9rem;
+}
+.success{
+    color: green;
+    font-size: .9rem;
+}
 .contact__container{
     row-gap: 3rem;
 }
