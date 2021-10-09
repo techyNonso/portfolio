@@ -147,16 +147,7 @@ function Skills() {
 
                     </div>
 
-                    <div className="skills__data">
-                      <div className="skills_titles">
-                        <h3 className="skills__name">Node Js</h3>
-                        <span className="skills__number">70%</span>
-                      </div>
-                      <div className="skills__bar">
-                        <span className="skills__percentage skills__node"></span>
-                      </div>
-
-                    </div>
+                    
                     <div className="skills__data">
                       <div className="skills_titles">
                         <h3 className="skills__name">Python</h3>
@@ -224,7 +215,7 @@ function Skills() {
 
                   <div>
                     <h1 className="skills_titles">Blockchain</h1>
-                    <span className="skills__subtitle">  1 year </span>
+                    <span className="skills__subtitle"> Less than 1 year </span>
                   </div>
 
                   <i className="uil uil-angle-down skills__arrow"></i>
@@ -253,11 +244,20 @@ function Skills() {
 
                     <div className="skills__data">
                       <div className="skills_titles">
-                        <h3 className="skills__name">Truffle</h3>
+                        <h3 className="skills__name">Webs.py</h3>
                         <span className="skills__number">70%</span>
                       </div>
                       <div className="skills__bar">
-                        <span className="skills__percentage skills__truffle"></span>
+                        <span className="skills__percentage skills__web3"></span>
+                      </div>
+                    </div>
+                    <div className="skills__data">
+                      <div className="skills_titles">
+                        <h3 className="skills__name">Brownie</h3>
+                        <span className="skills__number">70%</span>
+                      </div>
+                      <div className="skills__bar">
+                        <span className="skills__percentage skills__brownie"></span>
                       </div>
                     </div>
 
