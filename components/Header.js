@@ -6,7 +6,7 @@ function Header() {
       
         <header className="header" id="header">
           <nav className="nav container">
-            <AnchorLink  href="#" className="nav__logo">CodyPharm</AnchorLink >
+            <AnchorLink  href="#home" className="nav__logo">CodyPharm</AnchorLink >
             <div className="nav__menu" id="nav-menu">
               <ul className="nav__list grid">
                 <li className="nav__item">

@@ -5,7 +5,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
 function About() {
 
   const download = () => {
-    fetch('../assets/pdf/myresume.pdf',{
+    fetch('https://drive.google.com/uc?id=1CEN-4ZRAD8hdxSZNQ58xw-sMtRP6J83E&export=download',{
       method: 'GET',
       headers:{
         'Content-Type': 'application/pdf',
@@ -38,7 +38,7 @@ function About() {
         
         
           <div className="about__data">
-            <p className="about__description">High level experience in fullstack web development and Blockchain development. High level experience in fullstack web development. </p>
+            <p className="about__description">High level experience in fullstack web development and great understanding of Blockchain development.</p>
             <div className="about__info">
               <div>
                 <span className="about__info-title">04+</span>
