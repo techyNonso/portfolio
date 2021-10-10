@@ -5,7 +5,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
 function About() {
 
   const download = () => {
-    fetch('../assets/pdf/myresume.pdf',{
+    fetch('https://drive.google.com/file/d/1CEN-4ZRAD8hdxSZNQ58xw-sMtRP6J83E/view?usp=sharing',{
       method: 'GET',
       headers:{
         'Content-Type': 'application/pdf',
