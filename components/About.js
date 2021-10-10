@@ -18,7 +18,7 @@ function About() {
       link.href = url;
       link.setAttribute(
         'download',
-        'resume.pdf',
+        'myresume.pdf',
       );
 
       document.body.appendChild(link);
