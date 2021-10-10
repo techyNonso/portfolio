@@ -1,6 +1,7 @@
 import React from 'react'
 import about from "../assets/img/about.jpeg"
 import AnchorLink from 'react-anchor-link-smooth-scroll'
+import { ExternalLink } from 'react-external-link';
 
 function About() {
 
@@ -28,6 +29,8 @@ function About() {
       link.parentNode.removeChild(link)
     })
   }
+
+  const link = "https://drive.google.com/uc?id=1CEN-4ZRAD8hdxSZNQ58xw-sMtRP6J83E&export=download"
   return (
       <section className="about section" id="about">
         <h2 className="section__title">About Me</h2>
@@ -53,9 +56,9 @@ function About() {
             </div>
 
             <div className="about__buttons">
-              <span   onClick={download} className="button button--flex">
+              <ExternalLink href={link}  className="button button--flex">
               Download CV<i className="uil uil-download-alt button__icon"></i>
-              </span >
+              </ExternalLink >
             </div>
           </div>
         </div>

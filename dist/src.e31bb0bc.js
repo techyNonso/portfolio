@@ -30322,7 +30322,7 @@ function Header() {
   }, /*#__PURE__*/_react.default.createElement("nav", {
     className: "nav container"
   }, /*#__PURE__*/_react.default.createElement(_reactAnchorLinkSmoothScroll.default, {
-    href: "#",
+    href: "#home",
     className: "nav__logo"
   }, "CodyPharm"), /*#__PURE__*/_react.default.createElement("div", {
     className: "nav__menu",
@@ -30673,6 +30673,8 @@ var _about = _interopRequireDefault(require("../assets/img/about.jpeg"));
 
 var _reactAnchorLinkSmoothScroll = _interopRequireDefault(require("react-anchor-link-smooth-scroll"));
 
+var _reactExternalLink = require("react-external-link");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 (function () {
@@ -30686,7 +30688,7 @@ var __signature__ = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoader
 
 function About() {
   var download = function download() {
-    fetch('../assets/pdf/myresume.pdf', {
+    fetch('https://drive.google.com/uc?id=1CEN-4ZRAD8hdxSZNQ58xw-sMtRP6J83E&export=download', {
       method: 'GET',
       headers: {
         'Content-Type': 'application/pdf'
@@ -30697,13 +30699,14 @@ function About() {
       var url = window.URL.createObjectURL(new Blob([blob]));
       var link = document.createElement('a');
       link.href = url;
-      link.setAttribute('download', 'resume.pdf');
+      link.setAttribute('download', 'myresume.pdf');
       document.body.appendChild(link);
       link.click();
       link.parentNode.removeChild(link);
     });
   };
 
+  var link = "https://drive.google.com/uc?id=1CEN-4ZRAD8hdxSZNQ58xw-sMtRP6J83E&export=download";
   return /*#__PURE__*/_react.default.createElement("section", {
     className: "about section",
     id: "about"
@@ -30720,7 +30723,7 @@ function About() {
     className: "about__data"
   }, /*#__PURE__*/_react.default.createElement("p", {
     className: "about__description"
-  }, "High level experience in fullstack web development and Blockchain development. High level experience in fullstack web development. "), /*#__PURE__*/_react.default.createElement("div", {
+  }, "High level experience in fullstack web development and great understanding of Blockchain development."), /*#__PURE__*/_react.default.createElement("div", {
     className: "about__info"
   }, /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("span", {
     className: "about__info-title"
@@ -30732,8 +30735,8 @@ function About() {
     className: "about__info-name"
   }, "Projects ", /*#__PURE__*/_react.default.createElement("br", null), " completed"))), /*#__PURE__*/_react.default.createElement("div", {
     className: "about__buttons"
-  }, /*#__PURE__*/_react.default.createElement("span", {
-    onClick: download,
+  }, /*#__PURE__*/_react.default.createElement(_reactExternalLink.ExternalLink, {
+    href: link,
     className: "button button--flex"
   }, "Download CV", /*#__PURE__*/_react.default.createElement("i", {
     className: "uil uil-download-alt button__icon"
@@ -30762,7 +30765,7 @@ exports.default = _default2;
   var leaveModule = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.leaveModule : undefined;
   leaveModule && leaveModule(module);
 })();
-},{"react":"../node_modules/react/index.js","../assets/img/about.jpeg":"../assets/img/about.jpeg","react-anchor-link-smooth-scroll":"../node_modules/react-anchor-link-smooth-scroll/lib/anchor-link.js"}],"../components/Skills.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","../assets/img/about.jpeg":"../assets/img/about.jpeg","react-anchor-link-smooth-scroll":"../node_modules/react-anchor-link-smooth-scroll/lib/anchor-link.js","react-external-link":"../node_modules/react-external-link/dist/index.esm.js"}],"../components/Skills.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -32677,7 +32680,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "1030" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "1036" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
